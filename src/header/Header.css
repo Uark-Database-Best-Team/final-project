@@ -1,0 +1,12 @@
+
+.Header{
+    display: block;
+}   
+
+.HeaderElement {
+    display:inline-block;
+    margin: 0px;
+    margin-top: 1%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
