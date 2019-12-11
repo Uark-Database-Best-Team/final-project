@@ -4,6 +4,7 @@ import Home from './home/Home';
 import Employees from './employees/Employee';
 import Books from './books/Books';
 import Users from './users/Users';
+import AddBook from './addBook/AddBook';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
@@ -20,6 +21,7 @@ class App extends React.Component {
               <Route path='/books' component={Books} />
               <Route path='/users' component={Users} />
               <Route path='/employees' component={Employees} />
+              <Route path='/addBook' component={AddBook} />
           </Switch>
       </Router>
       </header>

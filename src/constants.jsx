@@ -1,5 +1,3 @@
-const PORT = 38441
-
-const apiPath = "http://localhost:" + PORT;
+const apiPath = "http://localhost:8080";
 
 export default apiPath;

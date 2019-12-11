@@ -8,18 +8,24 @@ function Books() {
   const [searchQuery, setSearchQuery] = useState([]);
 
   useEffect(() => {
-    fetch(apiPath + "/books").then(d => d.json()).then(data => {
-    setBooks(data);
-    });
+    getAllBooks();
   }, []);
 
   function searchBooks(author){
-    fetch(apiPath + "/books/search?author=" + author).then(d => d.json()).then(data => {
-    setBooks(data);
-    });
+    if(author!== ""){
+      fetch(`${apiPath}/book/search?author=${author}`).then(d => d.json()).then(data => {
+      setBooks(data);
+      });
+    } else {
+      getAllBooks();
+    }
   }
 
-  console.log(books);
+  function getAllBooks(){
+    fetch(`${apiPath}/books`).then(d => d.json()).then(data => {
+      setBooks(data);
+      });
+  }
 
   return (
     <div className="Header">
@@ -35,6 +41,7 @@ function Books() {
         <pre className="authorList">Author(s): {item.authors} | ISBN: {item.isbn}</pre>
       </div>
       )}
+
 
     </div>
   );
