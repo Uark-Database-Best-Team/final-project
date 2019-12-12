@@ -1,0 +1,20 @@
+    .cartName {
+        color: lightblue;
+        font-size: 28pt;
+        text-decoration: underline;
+        margin-bottom: 2%;
+    }
+
+    .itemQuantity {
+        font-size: 16pt;
+
+    }
+
+    .price {
+        color: lightgreen;
+        font-size: 16pt;
+    }
+
+    .cartMergeInputItem {
+        display: inline;
+    }

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import apiPath from '../constants';
+import BookCard from './bookCard';
 import './Books.css';
 
 function Books() {
-
   const [books, setBooks] = useState([]);
   const [searchQuery, setSearchQuery] = useState([]);
 
@@ -37,8 +37,7 @@ function Books() {
       {books.map((item,i) => 
       <div key={i}>
         <hr />  
-        <p>{item.title}</p>
-        <pre className="authorList">Author(s): {item.authors} | ISBN: {item.isbn}</pre>
+        <BookCard item={item} />
       </div>
       )}
 

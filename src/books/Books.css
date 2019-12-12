@@ -5,3 +5,7 @@ p {
 .authorList {
     font-size: 14px;
 }
+
+.addToCart {
+    float:right;
+}
