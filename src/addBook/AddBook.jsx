@@ -32,12 +32,12 @@ function AddBook() {
     <div className="Header">
         <p>Add a book</p>
         Book Title: <input type="text" value={title} onChange={(e) => setTitle(e.target.value)}/><br/>
-        Book ISBN: <input type="text" value={isbn} onChange={(e) => setIsbn(e.target.value)}/><br/>
+        Book ISBN: <input type="number" value={isbn} onChange={(e) => setIsbn(e.target.value)}/><br/>
         Author(s): <input type="text" value={authors} onChange={(e) => setAuthors(e.target.value)}/><br/>
         Publisher: <input type="text" value={publisher} onChange={(e) => setPublisher(e.target.value)}/><br/>
-        Year: <input type="text" value={year} onChange={(e) => setYear(e.target.value)}/><br/>
+        Year: <input type="number" value={year} onChange={(e) => setYear(e.target.value)}/><br/>
         Category: <input type="text" value={category} onChange={(e) => setCategory(e.target.value)}/><br/>
-        Edition: <input type="text" value={edition} onChange={(e) => setEdition(e.target.value)}/><br/>
+        Edition: <input type="number" value={edition} onChange={(e) => setEdition(e.target.value)}/><br/>
         <button onClick={addBook}> Add Book </button> 
     </div>
   );

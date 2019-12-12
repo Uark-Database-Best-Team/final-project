@@ -20,12 +20,7 @@ a {
   margin-right: 1%;
 }
  
-a:hover {
-  color: orange;
-  font-size: 1.1em;
-}
-
-.activeLink {
+a:hover, .activeLink {
   color: orange;
   font-size: 1.1em;
 }

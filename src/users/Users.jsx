@@ -56,7 +56,7 @@ function Users() {
 
       <Switch>
         <Route path="/users/cart">
-          Shopping Cart Id: <input type="text" value={cartId} onChange={(e) => setCartId(e.target.value)}/><br/>
+          Shopping Cart Id: <input type="number" value={cartId} onChange={(e) => setCartId(e.target.value)}/><br/>
           <button onClick={() => getShoppingCartData(cartId)}>View</button>
           {
             cartData.items !== undefined ? (
