@@ -12,7 +12,6 @@ function AddBook() {
     const [category, setCategory] = useState([]);
     const [edition, setEdition] = useState([]);
 
-
     function addBook(){
         const book = {
           title, isbn, authors, publisher, year, category, edition
